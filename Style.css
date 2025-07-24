@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+ 
+  .header {
+    background-color: #add8e6;
+    padding: 20px;
+    height: 200PX;
+    text-align: center;
+  }
+  
+  .content {
+    background-color: #f0f0f0;
+    padding: 20px;
+    height: 250PX;
+    text-align: center;
+  }
+  
+  .signup {
+    background-color: #cce5ff; 
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .feature1 {
+    background-color: #f6d365; 
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .feature2 {
+    background-color: #f4a6a6;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .feature3 {
+    background-color: #d0bfff; 
+    padding: 20px;
+    text-align: center;
+  }
+  
+ 
+  /* Tablet Layout (≥600px)       */
+  @media (min-width: 600px) {
+    .table {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  
+    .signup,
+    .feature1,
+    .feature2,
+    .feature3 {
+      width: 50%;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  
+    .signup {
+      background-color: #d6ecff;
+      order: 1;
+    }
+  
+    .feature1 {
+      background-color: #ffd394;
+      order: 2;
+    }
+  
+    .feature2 {
+      background-color: #f49c9c;
+      order: 3;
+    }
+  
+    .feature3 {
+      background-color: #cfc9ff;
+      order: 4;
+    }
+  
+   
+    .feature {
+      display: contents;
+    }
+  }
+  
+  /* Desktop Layout (≥900px) */
+
+   @media (min-width: 900px) {
+    .container {
+      flex-wrap: wrap;
+    }
+  
+    .feature1,
+    .feature2,
+    .feature3 {
+      width: calc(33.333% );
+    }
+    .table{
+      display: flex;
+      flex-direction: column;
+
+    }
+  
+    .signup,
+    .content {
+      width: 100%;
+
+    }
+    .feature{max-width: 100%;
+        display: flex;
+    }
+    .feature1 {
+      order: 1;
+    }
+  
+    .feature2 {
+      order: 2;
+    }
+  
+    .feature3 {
+      order: 3;
+    }
+  
+    .signup {
+      order: 4;
+    }
+  
+    .content {
+      order: 5;
+    }
+  } 
+  
