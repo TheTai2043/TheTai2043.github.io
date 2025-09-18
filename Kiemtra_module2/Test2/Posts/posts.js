@@ -564,13 +564,7 @@ document.getElementById("btnSearch").onclick = function () {
   const found = posts.filter((p) => p.id == searchId);
   renderTable(found);
 
-  // Nếu chỉ có 1 kết quả thì mở modal luôn
-  if (found.length === 1) {
-    modalTitle.textContent = found[0].title;
-    modalImage.src = found[0].image || "https://via.placeholder.com/400x200";
-    modalContent.textContent = found[0].content || "Không có nội dung";
-    modal.style.display = "flex";
-  }
+ 
 };
 
 // Reset về danh sách ban đầu
