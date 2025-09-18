@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bảng Posts</title>
+    <link rel="stylesheet" href="posts.css" />
+  </head>
+  <body>
+    <h2>Danh sách Posts</h2>
+
+    <!-- Nút chuyển sang trang Users -->
+    <button id="btnUsers">Xem danh sách Users</button>
+    <div class="search-box">
+      <input
+        type="number"
+        id="searchInput"
+        placeholder="Nhập ID post cần tìm..."
+      />
+      <button id="btnSearch">Tìm</button>
+      <button id="btnReset">Reset</button>
+    </div>
+    <table id="postsTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Tiêu đề</th>
+          <th>User ID</th>
+          <th>Ngày tạo</th>
+          <th>Ngày cập nhật</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- JS render dữ liệu -->
+      </tbody>
+    </table>
+
+    <!-- Modal -->
+    <div class="modal" id="postModal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3 id="modalTitle"></h3>
+        <img id="modalImage" src="" alt="" />
+        <p id="modalContent"></p>
+      </div>
+    </div>
+
+    <script src="posts.js"></script>
+    <script>
+      // Bắt sự kiện click chuyển sang users.html
+      document.getElementById("btnUsers").onclick = function () {
+        window.location.href = "../user/users.html";
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,213 @@
+/* Reset nhẹ nhàng */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+  }
+  
+  body {
+    background: #f0f2f5;
+    padding: 30px;
+    color: #333;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #222;
+  }
+  
+  /* Khu vực controls (tìm kiếm + nút) */
+  .controls {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  #searchEmail {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    transition: 0.2s;
+    font-size: 14px;
+  }
+  
+  #searchEmail:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 6px rgba(40, 167, 69, 0.4);
+  }
+  
+  /* Nút quay lại Posts */
+  #btnPosts {
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s;
+  }
+  
+  #btnPosts:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34);
+  }
+  
+  /* Bảng Users */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  th,
+  td {
+    border: 1px solid #e0e0e0;
+    padding: 12px 14px;
+    text-align: left;
+    font-size: 15px;
+  }
+  
+  th {
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  tbody tr:nth-child(even) {
+    background: #fafafa;
+  }
+  
+  tbody tr:hover {
+    background: #e9f7ef;
+  }
+  
+  /* Cột email nổi bật */
+  .email-cell {
+    color: #0056b3;
+    font-weight: 500;
+  }
+  
+  /* Trạng thái không có dữ liệu */
+  .no-data {
+    text-align: center;
+    color: #777;
+    padding: 14px;
+    font-style: italic;
+    font-size: 14px;
+  }
+/* Reset nhẹ nhàng */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+  }
+  
+  body {
+    background: #f0f2f5;
+    padding: 30px;
+    color: #333;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #222;
+  }
+  
+  /* Khu vực controls (tìm kiếm + nút) */
+  .controls {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  #searchEmail {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    transition: 0.2s;
+    font-size: 14px;
+  }
+  
+  #searchEmail:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 6px rgba(40, 167, 69, 0.4);
+  }
+  
+  /* Nút quay lại Posts */
+  #btnPosts {
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s;
+  }
+  
+  #btnPosts:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34);
+  }
+  
+  /* Bảng Users */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  th,
+  td {
+    border: 1px solid #e0e0e0;
+    padding: 12px 14px;
+    text-align: left;
+    font-size: 15px;
+  }
+  
+  th {
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  tbody tr:nth-child(even) {
+    background: #fafafa;
+  }
+  
+  tbody tr:hover {
+    background: #e9f7ef;
+  }
+  
+  /* Cột email nổi bật */
+  .email-cell {
+    color: #0056b3;
+    font-weight: 500;
+  }
+  
+  /* Trạng thái không có dữ liệu */
+  .no-data {
+    text-align: center;
+    color: #777;
+    padding: 14px;
+    font-style: italic;
+    font-size: 14px;
+  }
+    

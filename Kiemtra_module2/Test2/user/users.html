@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bảng Users</title>
+    <link rel="stylesheet" href="users.css" />
+  </head>
+  <body>
+    <h2>Danh sách Users</h2>
+
+    <div class="controls">
+      <!-- Input tìm kiếm theo email -->
+      <input id="searchEmail" type="search" placeholder="Tìm theo email..." />
+
+      <!-- Nút quay lại posts -->
+      <button id="btnPosts">Danh sách Posts</button>
+    </div>
+
+    <table id="usersTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Họ</th>
+          <th>Tên</th>
+          <th>Email</th>
+          <th>Password</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- JS render -->
+      </tbody>
+    </table>
+
+    <script src="users.js"></script>
+    <script>
+      document.getElementById("btnPosts").onclick = function () {
+        window.location.href = "../Posts/posts.html";
+      };
+    </script>
+  </body>
+</html>

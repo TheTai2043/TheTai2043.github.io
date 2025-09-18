@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="todo-container">
+      <h1>Todo App</h1>
+
+      <!-- Input thêm task -->
+      <div class="input-section">
+        <input type="text" id="taskInput" placeholder="Nhập công việc..." />
+        <button id="addTaskBtn">Thêm</button>
+      </div>
+
+      <!-- Danh sách task -->
+      <ul id="taskList"></ul>
+
+      <!-- Filter -->
+      <div class="filters">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="active">Active</button>
+        <button data-filter="completed">Completed</button>
+      </div>
+
+      <!-- Xoá -->
+      <div class="actions">
+        <button id="clearAll">Xoá tất cả</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
